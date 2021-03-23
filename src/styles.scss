@@ -1,1 +1,66 @@
 /* You can add global styles to this file, and also import other style files */
+@import "./colors.scss";
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  color: var(--primary-font-color);
+  margin: 0;
+  background-color: var(--background-color);
+  // background-image: url("https://www.transparenttextures.com/patterns/brilliant.png");
+}
+
+h1 {
+  font-family: "Old Standard TT", Serif;
+  font-size: 48px;
+}
+
+h2 {
+  font-family: "Old Standard TT", Serif;
+  font-size: 36px;
+}
+
+h3 {
+  font-family: "Old Standard TT", Serif;
+  font-size: 24px;
+}
+
+h4 {
+  font-family: "Old Standard TT", Serif;
+  font-size: 18px;
+}
+
+p {
+  font-family: "Old Standard TT", Serif;
+  font-size: 18px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  font-family: "Old Standard TT", Serif;
+  &.tech-item {
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    padding: 4px 8px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    font-size: 14px;
+  }
+}
+
+.elevated {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.1);
+}

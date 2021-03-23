@@ -1,0 +1,16 @@
+<div class="projects-container">
+  <div class="top-title-container">
+    <h2 class="title" id="proj">Projects</h2>
+  </div>
+  <h3 class="subtitle">
+    For more experiments and one-off explorations, take a look at my
+    <a href="https://github.com/seanthaswan/">GitHub</a>.
+  </h3>
+  <div class="project-items-container">
+    <div
+      class="project-item elevated"
+      [ngStyle]="{ 'background-image': 'url(' + project.screenshotPath + ')' }"
+      *ngFor="let project of projects"
+    ></div>
+  </div>
+</div>

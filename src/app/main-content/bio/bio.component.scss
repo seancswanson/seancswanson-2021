@@ -1,0 +1,25 @@
+.bio-container {
+  position: relative;
+  background-color: var(--secondary-background-color);
+  padding: 5px 10px;
+  border-radius: 2px;
+  border: 1px dotted rgba(0, 0, 0, 0.3);
+
+  .bio-background {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    opacity: 0.05;
+    width: 250px;
+
+    img {
+      width: 100%;
+    }
+  }
+  .bio {
+    width: 66.6%;
+    @media (max-width: 700px) {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+<div class="education-container">
+  <div class="top-title-container">
+    <h2 class="title" id="cv">Curriculum Vitae</h2>
+  </div>
+  <h3>My most recent development work and academic experience.</h3>
+  <h3>
+    Click <a href="../../../assets/sean-swanson-resume-jan-2020.pdf">here</a> to
+    download my résumé.
+  </h3>
+  <div class="cv-item elevated" *ngFor="let item of cvItems">
+    <div class="top">
+      <p class="top-heading">{{ item.organization }}</p>
+      <h3 class="top-heading">{{ item.role }}</h3>
+      <p class="top-heading">{{ item.dateRange }}</p>
+    </div>
+    <div class="bottom">
+      <p>{{ item.description }}</p>
+      <p class="tech-description" *ngIf="item.techDescription !== ''">
+        {{ item.techDescription }}
+      </p>
+      <ul class="tech-list">
+        <li class="tech-item" *ngFor="let tech of item.tech">{{ tech }}</li>
+      </ul>
+
+      <p class="tech-description" *ngIf="item.toolsDescription !== ''">
+        {{ item.toolsDescription }}
+      </p>
+      <ul class="tech-list" *ngIf="item.tools !== []">
+        <li class="tech-item" *ngFor="let tool of item.tools">{{ tool }}</li>
+      </ul>
+    </div>
+  </div>
+</div>
